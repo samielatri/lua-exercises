@@ -1,7 +1,7 @@
 
 -- exercice 1 :
 print("gonna print nil")
-print(variableContainingNil)
+print(undefinedVariable)
 
 -- exercice 2 :
 
@@ -76,5 +76,9 @@ local realDamageOfBow = heroDistances.bow.damage * heroDistances.bow.maxRange
 
 print(realDamageOfBow)
 
-variableContainingNil = nil
+-- exercice 3 
+lampState = true
+print("lamp is on")
+lampState = false 
+print("lamp is off")
 

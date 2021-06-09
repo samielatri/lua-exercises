@@ -1,9 +1,5 @@
-
--- exercice 1 :
 print("gonna print nil")
 print(undefinedVariable)
-
--- exercice 2 :
 
 hero = {
     firstName = "Link",
@@ -76,7 +72,6 @@ local realDamageOfBow = heroDistances.bow.damage * heroDistances.bow.maxRange
 
 print(realDamageOfBow)
 
--- exercice 3 
 lampState = true
 print("lamp is on")
 lampState = false 

@@ -1,3 +1,5 @@
+-- basics practice
+
 print("gonna print nil")
 print(undefinedVariable)
 
@@ -76,4 +78,70 @@ lampState = true
 print("lamp is on")
 lampState = false 
 print("lamp is off")
+
+
+print("iterate from 0 to 10")
+for iterator=0,10 do
+  print("iterator = ", iterator)
+end
+print("iterator ended")
+
+
+
+
+print("iterate from 0 to 100 with 10 steps")
+for iterator=0,100,10 do
+  print("iterator = ", iterator)
+end
+print("iterator ended")
+
+
+
+print("iterate from 0 to 100 with -10 steps")
+for iterator=0,100,-10 do
+  print("iterator = ", iterator)
+end
+print("iterator ended")
+
+print("while")
+iterator = 0
+while iterator < 100 do
+  iterator = iterator + 10
+  if(iterator == 50) then
+    print("50")
+    break
+  elseif(iterator ~= 5) then
+    print("not 5")
+  else
+    print("iterator = ", iterator)
+  end
+end
+print("while ended")
+
+global = 10
+function sum(a, b)
+  global = a + b
+  return global
+end
+
+sum = sum(10, 10)
+print(sum)
+print(global)
+
+global = 10
+function localSum(a, b)
+  local global = a + b
+  return global
+end
+print(localSum(10, 10))
+print(global)
+
+function simpleTrueReturn()
+  return true
+end
+
+if(simpleTrueReturn) then
+  print("ok")
+end
+
 
